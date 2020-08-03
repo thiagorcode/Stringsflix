@@ -1,14 +1,16 @@
 {
-  {
-    "id": 1,
-    "nome": "Viola",
-    "descricao": "Estudos para Viola de Arco",
-    "cor": "#b5b5b5"
-  },
-  {
-    "id": 2,
-    "nome": "Violino",
-    "descricao": "Estudos para Violino",
-    "cor": "#b6b6b6"
-  }
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Viola",
+      "descricao": "Estudos para Viola de Arco",
+      "cor": "#b5b5b5"
+    },
+    {
+      "id": 2,
+      "nome": "Violino",
+      "descricao": "Estudos para Violino",
+      "cor": "#b6b6b6"
+    }
+  ]
 }
