@@ -55,7 +55,6 @@ function CadastroCategoria() {
       history.push('/');
     })
       .catch(() => {
-
       })
     clearForm();
   }
@@ -68,7 +67,6 @@ function CadastroCategoria() {
       </h1>
 
       <form onSubmit={handleSubmit}>
-
         <FormField
           label="Nome da Categoria"
           name="nome"
