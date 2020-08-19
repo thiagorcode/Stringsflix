@@ -1,239 +1,209 @@
 {
   "categorias": [
     {
-      "id": 6,
-      "titulo": "DevSoutinho",
-      "cor": "#ff6a00",
+      "titulo": "Para Ouvir",
+      "cor": "#00b89c",
       "link_extra": {
-        "text": "Canal no YouTube",
-        "url": "https://youtube.com/c/DevSoutinho"
-      }
+        "text": ""
+      },
+      "id": 1
     },
     {
-      "id": 5,
-      "titulo": "Games",
-      "cor": "red",
+      "titulo": "Violino",
+      "cor": "#e90707",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      }
+        "text": "Base para Violinistas"
+      },
+      "id": 2
     },
     {
-      "id": 4,
-      "titulo": "Filmes",
-      "cor": "orange"
+      "titulo": "Viola",
+      "cor": "#ff8800",
+      "link_extra": {
+        "text": "Base para estudantes de Viola"
+      },
+      "id": 3
     },
     {
-      "id": 1,
-      "titulo": "Front End",
-      "cor": "#6BD1FF",
+      "titulo": "Violoncelo",
+      "cor": "#0033ff",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      }
+        "text": "Estudos para Violoncelo"
+      },
+      "id": 4
     },
     {
-      "id": 2,
-      "titulo": "Back End",
-      "cor": "#00C86F",
+      "titulo": "MasterClass",
+      "cor": "#f6fa00",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
-      }
-    },
-    {
-      "id": 3,
-      "titulo": "Data Science e Inteligência Artificial",
-      "cor": "#9cd33b",
-      "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/cursos-online-mobile"
-      }
+        "text": "Aulas"
+      },
+      "id": 5
     }
   ],
   "videos": [
     {
       "id": 50,
-      "categoriaId": 6,
-      "titulo": "SEO com React",
-      "description": "Será que é tão difícil fazer SEO com React?",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
-    },
-    {
-      "id": 51,
-      "categoriaId": 6,
-      "titulo": "Como fazer um React e aprender a ideia do Virtual DOM na prática",
-      "description": "Já parou pra pensar como que o React renderiza as coisas na tela?",
-      "url": "https://www.youtube.com/watch?v=5MzOCxSWrrc"
-    },
-    {
-      "id": 1,
       "categoriaId": 1,
-      "titulo": "SEO com React",
-      "description": "Será que é tão difícil fazer SEO com React?",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "titulo": "Instrumentos de Cordas",
+      "description": "Será que tocar instrumentos de cordas é difícil?",
+      "url": "https://www.youtube.com/watch?v=zs7r5q1afVY"
     },
     {
-      "id": 2,
-      "categoriaId": 1,
-      "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
-    },
-    {
-      "id": 3,
-      "categoriaId": 1,
-      "titulo": "Componentização com VanillaJS #AluraMais",
-      "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
-    },
-    {
-      "id": 4,
-      "categoriaId": 1,
-      "titulo": "Pare de chutar e aprenda a display: inline #01",
-      "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
-    },
-    {
-      "id": 5,
-      "categoriaId": 1,
-      "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-      "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
-    },
-    {
-      "id": 6,
-      "categoriaId": 1,
-      "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
-    },
-    {
-      "id": 7,
-      "categoriaId": 1,
-      "titulo": "Novidades do Angular v9",
-      "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
-    },
-    {
-      "id": 8,
+      "titulo": "EXERCÍCIOS | FLEXIBILIDADE DOS DEDOS DA MÃO DIREITA",
+      "url": "https://www.youtube.com/watch?v=YdZCL3FSFKI&list=PLJP6kp01RpLXUGXsC9moaGF_s0NARPre-&index=2&t=0s",
       "categoriaId": 2,
-      "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-      "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+      "id": 51
     },
     {
-      "id": 9,
+      "titulo": "POSTURA do Violino",
+      "url": "https://www.youtube.com/watch?v=ZZWx8-TC1eA&list=PLJP6kp01RpLXUGXsC9moaGF_s0NARPre-&index=44&t=0s",
       "categoriaId": 2,
-      "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-      "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
-    },
-    {
-      "id": 10,
-      "categoriaId": 2,
-      "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-      "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
-    },
-    {
-      "id": 11,
-      "categoriaId": 2,
-      "titulo": "API: Dicionário do Programador",
-      "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-    },
-    {
-      "id": 12,
-      "categoriaId": 2,
-      "titulo": "Usando Git Direito",
-      "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
-    },
-    {
-      "id": 13,
-      "categoriaId": 3,
-      "titulo": "Teste de Turing",
-      "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
-    },
-    {
-      "id": 14,
-      "categoriaId": 3,
-      "titulo": "O que é Data Science?",
-      "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
-    },
-    {
-      "id": 15,
-      "categoriaId": 3,
-      "titulo": "Melhor forma de aprender Python",
-      "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
-    },
-    {
-      "id": 16,
-      "categoriaId": 3,
-      "titulo": "Como ingressar no mercado de Data Science?",
-      "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
-    },
-    {
-      "id": 17,
-      "categoriaId": 4,
-      "titulo": "Interestellar",
-      "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
-    },
-    {
-      "id": 18,
-      "categoriaId": 4,
-      "titulo": "Gattaca",
-      "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
-    },
-    {
-      "id": 19,
-      "categoriaId": 4,
-      "titulo": "A Chegada",
-      "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
-    },
-    {
-      "id": 20,
-      "categoriaId": 4,
-      "titulo": "Feitiço do Tempo",
-      "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
-    },
-    {
-      "id": 21,
-      "categoriaId": 5,
-      "titulo": "Sem nexo",
-      "url": "https://www.youtube.com/"
-    },
-    {
-      "id": 22,
-      "categoriaId": 5,
-      "titulo": "Sem nexo",
-      "url": "https://www.youtube.com/"
-    },
-    {
-      "id": 23,
-      "categoriaId": 5,
-      "titulo": "Sem nexo",
-      "url": "https://www.youtube.com/"
-    },
-    {
-      "id": 24,
-      "categoriaId": 5,
-      "titulo": "Sem nexo",
-      "url": "https://www.youtube.com/"
-    },
-    {
-      "titulo": "O que todo projeto deveria ter? #01",
-      "url": "https://www.youtube.com/watch?v=yMRSDdifGW8",
-      "categoriaId": 6,
       "id": 52
     },
     {
-      "titulo": "Como fazer um jogo com JavaScript?",
-      "url": "https://www.youtube.com/watch?v=jOAU81jdi-c",
-      "categoriaId": 6,
+      "titulo": "4 passos para Evoluir | Violino SEM ATALHOS",
+      "url": "https://www.youtube.com/watch?v=p-ldd2c4K-w&t=1s",
+      "categoriaId": 2,
       "id": 53
     },
     {
-      "titulo": "Como fazer o efeito de desenhar com CSS?",
-      "url": "https://www.youtube.com/watch?v=4cEMgap9wpk",
-      "categoriaId": 6,
+      "titulo": " Quarentena #2 | MÃO DO ARCO",
+      "url": "https://www.youtube.com/watch?v=nG3Ecl6PuM8",
+      "categoriaId": 2,
       "id": 54
     },
     {
-      "titulo": "Usando Excel como CMS + React",
-      "url": "https://www.youtube.com/watch?v=5t2gq3xJZ9o",
-      "categoriaId": 6,
+      "titulo": "Quarentena #3 | PONTO DE EQUILÍBRIO e PESO DO BRAÇO",
+      "url": "https://www.youtube.com/watch?v=cwUCghdb4vA",
+      "categoriaId": 2,
       "id": 55
+    },
+    {
+      "titulo": "Quarentena #4 | Troca de Cordas - Altura do Cotovelo",
+      "url": "https://www.youtube.com/watch?v=jJ-Mp42CUPM",
+      "categoriaId": 2,
+      "id": 56
+    },
+    {
+      "titulo": "Quarentena #5 | Posição da Mão esquerda",
+      "url": "https://www.youtube.com/watch?v=IrKXEG5D6MQ",
+      "categoriaId": 2,
+      "id": 57
+    },
+    {
+      "titulo": "TÉCNICA DO ARCO! Movimento pulso/dedos",
+      "url": " https://www.youtube.com/watch?v=K6oB7HtQ8rs&list=PLJP6kp01RpLXUGXsC9moaGF_s0NARPre-&index=3&t=0s",
+      "categoriaId": 2,
+      "id": 58
+    },
+    {
+      "titulo": "ARCO DE VIOLINO - TOQUE VIOLINO FACIl - Articulação dos DEDOS",
+      "url": "https://www.youtube.com/watch?v=yTndSGzEvoc&list=PLJP6kp01RpLXUGXsC9moaGF_s0NARPre-&index=10&t=0s",
+      "categoriaId": 2,
+      "id": 59
+    },
+    {
+      "titulo": "10 ERROS QUE TRAVAM SUA EVOLUÇÃO NO VIOLINO - Violino Didático",
+      "url": " https://www.youtube.com/watch?v=fxOmxl1AlaQ&list=PLJP6kp01RpLXUGXsC9moaGF_s0NARPre-&index=13&t=0s",
+      "categoriaId": 2,
+      "id": 60
+    },
+    {
+      "titulo": "PARTE 1 Estudos de mão esquerda para Viola",
+      "url": "https://www.youtube.com/watch?v=EXc1UZkBV08&list=PLJP6kp01RpLXUGXsC9moaGF_s0NARPre-&index=53&t=0s",
+      "categoriaId": 3,
+      "id": 61
+    },
+    {
+      "titulo": " PARTE 2 Estudos de mão esquerda para Viola",
+      "url": "https://www.youtube.com/watch?v=E9ayEHl1K4A&list=PLJP6kp01RpLXUGXsC9moaGF_s0NARPre-&index=54&t=0s",
+      "categoriaId": 3,
+      "id": 62
+    },
+    {
+      "titulo": "PARTE 3 Estudos de mão esquerda para Viola",
+      "url": "https://www.youtube.com/watch?v=3i3wXA1GRWc&list=PLRaZjDAfPyYYHQybbKdWL0eY5gwHMxTQr&index=3",
+      "categoriaId": 3,
+      "id": 63
+    },
+    {
+      "titulo": "PARTE 4 6 MOVIMENTOS BÁSICOS DE ARCO",
+      "url": " https://www.youtube.com/watch?v=s8y0wHGwhsE&list=PLJP6kp01RpLXUGXsC9moaGF_s0NARPre-&index=55&t=212s",
+      "categoriaId": 3,
+      "id": 64
+    },
+    {
+      "titulo": "PARTE 5 EXTENSÃO - Estudos de mão esquerda para Viola",
+      "url": "https://www.youtube.com/watch?v=S_MKSVLj38U&list=PLRaZjDAfPyYYHQybbKdWL0eY5gwHMxTQr&index=5",
+      "categoriaId": 3,
+      "id": 65
+    },
+    {
+      "titulo": "PARTE 6 MUDANÇA DE POSIÇÃO",
+      "url": "https://www.youtube.com/watch?v=zhuMCR64AYc",
+      "categoriaId": 3,
+      "id": 66
+    },
+    {
+      "titulo": "PARTE 3 l COLLÉ - Estudos de Arco para Viola",
+      "url": "https://www.youtube.com/watch?v=iEcQhKBnSk0",
+      "categoriaId": 3,
+      "id": 67
+    },
+    {
+      "titulo": "#aqueceviola 25 - Preparação para o Concerto de Telemann para Viola de Arco",
+      "url": "https://www.youtube.com/watch?v=b5pptheRcCc",
+      "categoriaId": 5,
+      "id": 68
+    },
+    {
+      "titulo": "Aprenda as NOTAS na 1ª POSIÇÃO do CELLO",
+      "url": "https://www.youtube.com/watch?v=Y3kHs3tCLS0",
+      "categoriaId": 4,
+      "id": 69
+    },
+    {
+      "titulo": "Aula 1 - Postura e Posicionamento do Violoncelo",
+      "url": "https://www.youtube.com/watch?v=qejXl2YawqE",
+      "categoriaId": 4,
+      "id": 70
+    },
+    {
+      "titulo": "Como Estudar Violoncelo? Por Onde Começar?",
+      "url": "https://www.youtube.com/watch?v=jgvbUr3-MGE",
+      "categoriaId": 4,
+      "id": 71
+    },
+    {
+      "titulo": "Jesus habita em meu coração Hino 117",
+      "url": "https://www.youtube.com/watch?v=bI0u_cLCCJw",
+      "categoriaId": 1,
+      "id": 72
+    },
+    {
+      "titulo": "Por Cristo, resgatado Hino 80",
+      "url": "https://www.youtube.com/watch?v=wp77KyjodP4",
+      "categoriaId": 1,
+      "id": 73
+    },
+    {
+      "titulo": "Porfiemos, irmãos, por entrar nos céus Hino 143",
+      "url": "https://www.youtube.com/watch?v=Qa4ppBQcGNk",
+      "categoriaId": 1,
+      "id": 74
+    },
+    {
+      "titulo": "Hinos CCB - 82",
+      "url": "https://www.youtube.com/watch?v=vmB2aRANaVc",
+      "categoriaId": 1,
+      "id": 75
+    },
+    {
+      "titulo": "Bendito seja o Deus Vivente Hino 321 CCB",
+      "url": "https://www.youtube.com/watch?v=3jJlDus6158",
+      "categoriaId": 1,
+      "id": 76
     }
   ]
 }

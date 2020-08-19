@@ -11,10 +11,11 @@ function CadastroVideo() {
    const history = useHistory();
    const [categorias, setCategorias] = useState([]);
    const categoryTitles = categorias.map(({ titulo }) => titulo);
+
    const { handleChange, values } = useForm({
       titulo: 'Video padrão',
-      url: 'https://www.youtube.com/watch?v=jOAU81jdi-c',
-      categoria: 'Front End',
+      url: '',
+      categoria: '',
    });
 
    useEffect(() => {
@@ -25,29 +26,30 @@ function CadastroVideo() {
          });
    }, []);
 
+   function handleSubmit(event) {
+      event.preventDefault();
+      // alert('Video Cadastrado com sucesso!!!1!');
+
+      const categoriaEscolhida = categorias.find((categoria) => {
+         return categoria.titulo === values.categoria;
+      });
+
+      videosRepository.create({
+         titulo: values.titulo,
+         url: values.url,
+         categoriaId: categoriaEscolhida.id,
+      })
+         .then(() => {
+            console.log('Cadastrou com sucesso!');
+            history.push('/');
+         });
+   }
+
    return (
       <PageDefault>
          <h1>Cadastro de Video</h1>
 
-         <form onSubmit={(event) => {
-            event.preventDefault();
-            // alert('Video Cadastrado com sucesso!!!1!');
-
-            const categoriaEscolhida = categorias.find((categoria) => {
-               return categoria.titulo === values.categoria;
-            });
-
-            videosRepository.create({
-               titulo: values.titulo,
-               url: values.url,
-               categoriaId: categoriaEscolhida.id,
-            })
-               .then(() => {
-                  console.log('Cadastrou com sucesso!');
-                  history.push('/');
-               });
-         }}
-         >
+         <form onSubmit={handleSubmit} >
             <FormField
                label="Título do Vídeo"
                name="titulo"
