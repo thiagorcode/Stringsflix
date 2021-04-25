@@ -18,6 +18,8 @@ Projeto desenvolvido junto aos professores da Alura no evento imersão React. O 
 ## Como Executar ?
 - Instalação:
 
+Você vai precisar ter o **[Node](https://nodejs.org/en/ "Node")** instalado em seu computador.
+
 ```bash
 npm install
 ```
