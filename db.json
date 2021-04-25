@@ -39,6 +39,14 @@
         "text": "Aulas"
       },
       "id": 5
+    },
+    {
+      "titulo": "Teste",
+      "cor": "#c30909",
+      "link_extra": {
+        "text": "Categoria Teste"
+      },
+      "id": 7
     }
   ],
   "videos": [
@@ -111,45 +119,9 @@
     },
     {
       "titulo": "PARTE 1 Estudos de mão esquerda para Viola",
-      "url": "https://www.youtube.com/watch?v=EXc1UZkBV08&list=PLJP6kp01RpLXUGXsC9moaGF_s0NARPre-&index=53&t=0s",
+      "url": "https://www.youtube.com/watch?v=HYqraHsgim4",
       "categoriaId": 3,
       "id": 61
-    },
-    {
-      "titulo": " PARTE 2 Estudos de mão esquerda para Viola",
-      "url": "https://www.youtube.com/watch?v=E9ayEHl1K4A&list=PLJP6kp01RpLXUGXsC9moaGF_s0NARPre-&index=54&t=0s",
-      "categoriaId": 3,
-      "id": 62
-    },
-    {
-      "titulo": "PARTE 3 Estudos de mão esquerda para Viola",
-      "url": "https://www.youtube.com/watch?v=3i3wXA1GRWc&list=PLRaZjDAfPyYYHQybbKdWL0eY5gwHMxTQr&index=3",
-      "categoriaId": 3,
-      "id": 63
-    },
-    {
-      "titulo": "PARTE 4 6 MOVIMENTOS BÁSICOS DE ARCO",
-      "url": " https://www.youtube.com/watch?v=s8y0wHGwhsE&list=PLJP6kp01RpLXUGXsC9moaGF_s0NARPre-&index=55&t=212s",
-      "categoriaId": 3,
-      "id": 64
-    },
-    {
-      "titulo": "PARTE 5 EXTENSÃO - Estudos de mão esquerda para Viola",
-      "url": "https://www.youtube.com/watch?v=S_MKSVLj38U&list=PLRaZjDAfPyYYHQybbKdWL0eY5gwHMxTQr&index=5",
-      "categoriaId": 3,
-      "id": 65
-    },
-    {
-      "titulo": "PARTE 6 MUDANÇA DE POSIÇÃO",
-      "url": "https://www.youtube.com/watch?v=zhuMCR64AYc",
-      "categoriaId": 3,
-      "id": 66
-    },
-    {
-      "titulo": "PARTE 3 l COLLÉ - Estudos de Arco para Viola",
-      "url": "https://www.youtube.com/watch?v=iEcQhKBnSk0",
-      "categoriaId": 3,
-      "id": 67
     },
     {
       "titulo": "#aqueceviola 25 - Preparação para o Concerto de Telemann para Viola de Arco",
@@ -204,6 +176,66 @@
       "url": "https://www.youtube.com/watch?v=3jJlDus6158",
       "categoriaId": 1,
       "id": 76
+    },
+    {
+      "titulo": "Como dominar os movimentos do arco da viola?",
+      "url": "https://www.youtube.com/watch?v=EjtBUvuwF4k",
+      "categoriaId": 3,
+      "id": 77
+    },
+    {
+      "titulo": "#aqueceviola​ 221 - Como começar os estudos diários?",
+      "url": "https://www.youtube.com/watch?v=VzSdIG9ZmW8",
+      "categoriaId": 3,
+      "id": 78
+    },
+    {
+      "titulo": "#aqueceviola​ 224 - Como faço para estudar uma música?",
+      "url": "https://www.youtube.com/watch?v=_xMgxJ1P8MA",
+      "categoriaId": 3,
+      "id": 79
+    },
+    {
+      "titulo": "Entenda os fundamentos e como estudar os \"famosos\" vibratos: de braço, pulso e dedos!",
+      "url": "https://www.youtube.com/watch?v=3ufQt6esrrI",
+      "categoriaId": 3,
+      "id": 80
+    },
+    {
+      "titulo": "Ponto de Contato: tudo que você precisa saber!",
+      "url": "https://www.youtube.com/watch?v=cRxiCwNGLes",
+      "categoriaId": 3,
+      "id": 81
+    },
+    {
+      "titulo": "Ponto de Contato: tudo que você precisa saber!",
+      "url": "https://www.youtube.com/watch?v=3D5h4U9URGc",
+      "categoriaId": 3,
+      "id": 82
+    },
+    {
+      "titulo": "05 - Como começar a estudar escalas na #violadearco​?",
+      "url": "https://www.youtube.com/watch?v=ZjLlc24XnGA",
+      "categoriaId": 3,
+      "id": 83
+    },
+    {
+      "titulo": "01 - Como começar a estudar escalas na #violadearco​?",
+      "url": "https://www.youtube.com/watch?v=MZqBHWxrR34",
+      "categoriaId": 3,
+      "id": 84
+    },
+    {
+      "titulo": "02 - Como começar a estudar escalas na #violadearco​?",
+      "url": "https://www.youtube.com/watch?v=AAU9JL82aQY",
+      "categoriaId": 3,
+      "id": 85
+    },
+    {
+      "titulo": "04 - Como começar a estudar escalas na #violadearco​?",
+      "url": "https://www.youtube.com/watch?v=HkA5F5Bk7LE",
+      "categoriaId": 3,
+      "id": 86
     }
   ]
 }
