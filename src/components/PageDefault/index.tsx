@@ -12,16 +12,14 @@ const Main = styled.main`
    padding-right: 5%;
 `;
 
-function PageDefault({ children }) {
-  return (
-    <>
-      <Menu />
-      <Main>
-        {children}
-      </Main>
-      <Footer />
-    </>
-  );
-}
+const PageDefault: React.FC = ({ children }) => (
+  <>
+    <Menu />
+    <Main>
+      {children}
+    </Main>
+    <Footer />
+  </>
+);
 
 export default PageDefault;

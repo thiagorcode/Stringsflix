@@ -3,14 +3,14 @@ import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
 import VideoCard from './components/VideoCard';
 import Slider, { SliderItem } from './components/Slider';
 
-function VideoCardGroup({
+const VideoCardGroup: React.FC = ({
   ignoreFirstVideo,
   category,
-}) {
+}) => {
   const categoryTitle = category.titulo;
   const categoryColor = category.cor;
   const categoryExtraLink = category.link_extra;
-  const videos = category.videos;
+  const { videos } = category;
   return (
     <VideoCardGroupContainer>
       {categoryTitle && (
@@ -18,11 +18,12 @@ function VideoCardGroup({
           <Title style={{ backgroundColor: categoryColor || 'red' }}>
             {categoryTitle}
           </Title>
-          {categoryExtraLink &&
-            <ExtraLink href={categoryExtraLink.url} target="_blank">
-              {categoryExtraLink.text}
-            </ExtraLink>
-          }
+          {categoryExtraLink
+            && (
+              <ExtraLink href={categoryExtraLink.url} target="_blank">
+                {categoryExtraLink.text}
+              </ExtraLink>
+            )}
         </>
       )}
       <Slider>
@@ -44,6 +45,6 @@ function VideoCardGroup({
       </Slider>
     </VideoCardGroupContainer>
   );
-}
+};
 
 export default VideoCardGroup;

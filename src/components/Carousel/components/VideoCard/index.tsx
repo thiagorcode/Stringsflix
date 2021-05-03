@@ -9,8 +9,7 @@ function getYouTubeId(youtubeURL) {
     );
 }
 
-
-function VideoCard({ videoTitle, videoURL, categoryColor }) {
+const VideoCard: React.FC = ({ videoTitle, videoURL, categoryColor }) => {
   const image = `https://img.youtube.com/vi/${getYouTubeId(videoURL)}/hqdefault.jpg`;
   return (
     <VideoCardContainer
@@ -21,6 +20,6 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
       title={videoTitle}
     />
   );
-}
+};
 
 export default VideoCard;

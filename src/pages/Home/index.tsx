@@ -5,6 +5,10 @@ import Carousel from '../../components/Carousel';
 import PageDefault from '../../components/PageDefault';
 import categoriasRepository from '../../repositories/categorias';
 
+interface MoviesDTO {
+
+}
+
 const Home: React.FC = () => {
   const [dadosIniciais, setDadosIniciais] = useState([]);
 
@@ -19,9 +23,9 @@ const Home: React.FC = () => {
         console.log(err.message);
       });
   }, []);
-
+  console.log(dadosIniciais);
   return (
-    <PageDefault paddingAll={0}>
+    <PageDefault>
       {dadosIniciais.length === 0 && (<div>Loading...</div>)}
 
       {dadosIniciais.map((categoria, indice) => {
@@ -49,9 +53,8 @@ const Home: React.FC = () => {
         );
       })}
 
-      {
-  </PageDefault>
+    </PageDefault>
   );
-}
+};
 
 export default Home;
