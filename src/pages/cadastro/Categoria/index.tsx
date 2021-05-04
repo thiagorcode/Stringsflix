@@ -5,7 +5,7 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
-// JSON - Server 
+// JSON - Server
 import categoriasRepository from '../../../repositories/categorias';
 
 function CadastroCategoria() {
@@ -36,26 +36,26 @@ function CadastroCategoria() {
   }, []);
 
   function handleSubmit(infosDoEvento) {
-    const { nome, cor, descricao } = values
+    const { nome, cor, descricao } = values;
     infosDoEvento.preventDefault();
     setCategorias([
       ...categorias,
       values,
     ]);
-    // ! Cria no Server uma nova categória 
+    // ! Cria no Server uma nova categória
     categoriasRepository.create({
       titulo: nome,
       cor,
       link_extra: {
         text: descricao,
-      }
+      },
 
     }).then(() => {
       console.log('Cadastrou com sucesso!');
       history.push('/');
     })
       .catch(() => {
-      })
+      });
     clearForm();
   }
 

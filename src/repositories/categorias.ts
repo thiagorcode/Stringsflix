@@ -1,8 +1,18 @@
+/* eslint-disable camelcase */
 import config from '../config';
 
 const URL_CATEGORIES = `${config.URL_BACKEND_TOP}/categorias`;
 
-function create(categoria) {
+interface CategoriaDTO {
+  id: number;
+  titulo: string;
+  cor: string
+  link_extra?: {
+    text: string;
+  }
+}
+
+function create(categoria: CategoriaDTO): Promise<any> {
   return fetch(`${URL_CATEGORIES}?_embed=categorias`, {
     method: 'POST',
     headers: {
@@ -19,7 +29,7 @@ function create(categoria) {
       throw new Error('Não foi possível cadastrar os dados :(');
     });
 }
-function getAll() {
+function getAll(): Promise<any> {
   return fetch(`${URL_CATEGORIES}`)
     .then(async (respostaDoServidor) => {
       if (respostaDoServidor.ok) {
@@ -31,7 +41,7 @@ function getAll() {
     });
 }
 
-function getAllWithVideos() {
+function getAllWithVideos(): Promise<any> {
   return fetch(`${URL_CATEGORIES}?_embed=videos`)
     .then(async (respostaDoServidor) => {
       if (respostaDoServidor.ok) {
