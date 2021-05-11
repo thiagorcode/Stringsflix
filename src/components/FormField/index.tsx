@@ -1,4 +1,4 @@
-import React, { LabelHTMLAttributes } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { FormFieldWrapper, Input, Label } from './style';
 
@@ -8,7 +8,7 @@ interface FormFieldDTO {
   label: string;
   type: string;
   name: string;
-  suggestions: string
+  suggestions: string[];
 }
 
 const FormField: React.FC<FormFieldDTO> = ({

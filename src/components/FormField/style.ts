@@ -10,7 +10,7 @@ export const FormFieldWrapper = styled.div`
   }
 `;
 
-export const Label = styled.label``;
+export const Label: any = styled.label``;
 Label.Text = styled.span`
   color: #E5E5E5;
   height: 57px;
@@ -29,7 +29,7 @@ Label.Text = styled.span`
   transition: .1s ease-in-out;
 `;
 
-export const Input = styled.input`
+export const Input = styled.input<{ hasValue: boolean }>`
   background: #53585D;
   color: #F5F5F5;
   display: block;
@@ -55,7 +55,7 @@ export const Input = styled.input`
   &:focus:not([type="color"]) + span {
     transform: scale(.6) translateY(-10px);
   }
-  ${({ hasValue }) => hasValue && css`
+  ${(props) => props.hasValue && css`
     &:not([type="color"]) + span {
       transform: scale(.6) translateY(-10px);
     }
