@@ -8,7 +8,8 @@ interface CategoriaDTO {
   titulo: string;
   cor: string
   link_extra?: {
-    text: string;
+    url?: string;
+    text?: string;
   }
 }
 

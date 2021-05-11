@@ -2,7 +2,11 @@ import React from 'react';
 
 import { VideoContainer, ResponsiveIframe } from './styles';
 
-const YouTubeIframeResponsive: React.FC = ({ youtubeID }) => (
+interface linkYtDTO {
+  youtubeID: string;
+}
+
+const YouTubeIframeResponsive: React.FC<linkYtDTO> = ({ youtubeID }: linkYtDTO) => (
   <VideoContainer>
     <ResponsiveIframe
       title="Titulo do Iframe"

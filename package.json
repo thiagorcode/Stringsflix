@@ -40,7 +40,14 @@
       "last 1 safari version"
     ]
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
     "@types/json-server": "^0.14.3",
     "@types/react-router-dom": "^5.1.7",
     "@types/react-slick": "^0.23.4",
@@ -57,6 +64,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "7.21.5",
     "eslint-plugin-react-hooks": "4",
+    "husky": "^6.0.0",
     "prettier": "^2.2.1"
   }
 }

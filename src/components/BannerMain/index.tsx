@@ -2,7 +2,13 @@ import React from 'react';
 import VideoIframeResponsive from './components/VideoIframeResponsive';
 import { BannerMainContainer, ContentAreaContainer, WatchButton } from './styles';
 
-function getYouTubeId(youtubeURL) {
+interface Movie {
+  videoTitle: string
+  videoDescription?: string;
+  url: string;
+}
+
+function getYouTubeId(youtubeURL: string) {
   return youtubeURL
     .replace(
       /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/,
@@ -10,7 +16,7 @@ function getYouTubeId(youtubeURL) {
     );
 }
 
-const BannerMain: React.FC = ({
+const BannerMain: React.FC<Movie> = ({
   videoTitle,
   videoDescription,
   url,

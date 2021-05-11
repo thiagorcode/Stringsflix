@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const VideoCardContainer = styled.a`
+export const VideoCardContainer = styled.a<{ url: string }>`
   border: 2px solid;
   border-radius: 4px;
   text-decoration: none;
@@ -10,7 +10,7 @@ export const VideoCardContainer = styled.a`
   flex: 0 0 298px;
   width: 298px;
   height: 197px;
-  background-image: ${({ url }) => `url(${url})`};
+  background-image: ${(props) => `url(${props.url})`};
   background-size: cover;
   background-position: center;
   border-radius: 10px;

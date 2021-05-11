@@ -3,7 +3,27 @@ import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
 import VideoCard from './components/VideoCard';
 import Slider, { SliderItem } from './components/Slider';
 
-const VideoCardGroup: React.FC = ({
+interface CarouselDTO {
+  ignoreFirstVideo?: boolean;
+  category: {
+    titulo: string;
+    id: number;
+    cor: string;
+    link_extra?: {
+      url?: string;
+      text?: string;
+    }
+    videos: {
+      categoriaId: number;
+      description?: string;
+      id: number;
+      titulo: string;
+      url: string
+    }[]
+  };
+}
+
+const VideoCardGroup: React.FC<CarouselDTO> = ({
   ignoreFirstVideo,
   category,
 }) => {
@@ -27,16 +47,16 @@ const VideoCardGroup: React.FC = ({
         </>
       )}
       <Slider>
-        {videos.map((video, index) => {
+        {videos.map((movie, index) => {
           if (ignoreFirstVideo && index === 0) {
             return null;
           }
 
           return (
-            <SliderItem key={video.titulo}>
+            <SliderItem key={movie.titulo}>
               <VideoCard
-                videoTitle={video.titulo}
-                videoURL={video.url}
+                videoTitle={movie.titulo}
+                videoURL={movie.url}
                 categoryColor={categoryColor}
               />
             </SliderItem>

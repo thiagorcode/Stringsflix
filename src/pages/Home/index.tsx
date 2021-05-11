@@ -6,49 +6,59 @@ import PageDefault from '../../components/PageDefault';
 import categoriasRepository from '../../repositories/categorias';
 
 interface MoviesDTO {
-
+  titulo: string;
+  cor: string;
+  link_extra?: {
+    text?: string;
+    url?: string;
+  };
+  id: number;
+  videos: {
+    categoriaId: number;
+    description?: string;
+    id: number;
+    titulo: string;
+    url: string;
+  }[]
 }
 
 const Home: React.FC = () => {
-  const [dadosIniciais, setDadosIniciais] = useState([]);
+  const [dataInit, setDataInit] = useState<MoviesDTO[]>([]);
 
   useEffect(() => {
-    // http://localhost:8080/categorias?_embed=videos
     categoriasRepository.getAllWithVideos()
-      .then((categoriasComVideos) => {
-        console.log(categoriasComVideos[0].videos[0]);
-        setDadosIniciais(categoriasComVideos);
+      .then((categoryWithMovies) => {
+        console.log(categoryWithMovies[0].videos[0]);
+        setDataInit(categoryWithMovies);
       })
       .catch((err) => {
         console.log(err.message);
       });
   }, []);
-  console.log(dadosIniciais);
   return (
     <PageDefault>
-      {dadosIniciais.length === 0 && (<div>Loading...</div>)}
+      {dataInit.length === 0 && (<div>Loading...</div>)}
 
-      {dadosIniciais.map((categoria, indice) => {
-        if (indice === 0) {
+      {dataInit.map((category: MoviesDTO, index) => {
+        if (index === 0) {
           return (
-            <div key={categoria.id}>
+            <div key={category.id}>
               <BannerMain
-                videoTitle={dadosIniciais[0].videos[0].titulo}
-                url={dadosIniciais[0].videos[0].url}
-                videoDescription={dadosIniciais[0].videos[0].description}
+                videoTitle={dataInit[0].videos[0].titulo}
+                url={dataInit[0].videos[0].url}
+                videoDescription={dataInit[0].videos[0].description}
               />
               <Carousel
                 ignoreFirstVideo
-                category={dadosIniciais[0]}
+                category={dataInit[0]}
               />
             </div>
           );
         }
-
         return (
           <Carousel
-            key={categoria.id}
-            category={categoria}
+            key={category.id}
+            category={category}
           />
         );
       })}

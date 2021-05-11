@@ -1,7 +1,13 @@
 import React from 'react';
 import { VideoCardContainer } from './styles';
 
-function getYouTubeId(youtubeURL) {
+interface CategoryMovieDTO {
+  videoTitle: string;
+  videoURL: string;
+  categoryColor: string;
+}
+
+function getYouTubeId(youtubeURL: string) {
   return youtubeURL
     .replace(
       /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/,
@@ -9,7 +15,7 @@ function getYouTubeId(youtubeURL) {
     );
 }
 
-const VideoCard: React.FC = ({ videoTitle, videoURL, categoryColor }) => {
+const VideoCard: React.FC<CategoryMovieDTO> = ({ videoTitle, videoURL, categoryColor }) => {
   const image = `https://img.youtube.com/vi/${getYouTubeId(videoURL)}/hqdefault.jpg`;
   return (
     <VideoCardContainer
