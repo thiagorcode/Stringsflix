@@ -5,11 +5,13 @@ import { FormFieldWrapper, Input, Label } from './style';
 interface FormFieldDTO {
   value: string;
   onChange(): void;
-  label: LabelHTMLAttributes;
-
+  label: string;
+  type: string;
+  name: string;
+  suggestions: string
 }
 
-const FormField: React.FC = ({
+const FormField: React.FC<FormFieldDTO> = ({
   label, type, name, value, onChange, suggestions,
 }) => {
   const fieldId = `id_${name}`;
