@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/img/stringflix.png';
 import './menu.css';
-import ButtonLink from '../helper';
+// import ButtonLink from '../helper';
 
 const Menu: React.FC = () => (
   <nav className="Menu">
@@ -10,9 +10,9 @@ const Menu: React.FC = () => (
       <img className="Logo" src={Logo} alt="StingFlix" />
     </Link>
 
-    <ButtonLink to="/cadastro/video" className="ButtonLink">
+    <Link to="/cadastro/video" className="ButtonLink">
       Novo Vídeo
-    </ButtonLink>
+    </Link>
   </nav>
 );
 

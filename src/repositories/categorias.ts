@@ -4,7 +4,7 @@ import config from '../config';
 const URL_CATEGORIES = `${config.URL_BACKEND_TOP}/categorias`;
 
 interface CategoriaDTO {
-  id: number;
+  id?: number;
   titulo: string;
   cor: string
   link_extra?: {
@@ -32,10 +32,10 @@ function create(categoria: CategoriaDTO): Promise<any> {
 }
 function getAll(): Promise<any> {
   return fetch(`${URL_CATEGORIES}`)
-    .then(async (respostaDoServidor) => {
-      if (respostaDoServidor.ok) {
-        const resposta = await respostaDoServidor.json();
-        return resposta;
+    .then(async (response) => {
+      if (response.ok) {
+        const data = await response.json();
+        return data;
       }
 
       throw new Error('Não foi possível pegar os dados :(');
@@ -44,10 +44,12 @@ function getAll(): Promise<any> {
 
 function getAllWithVideos(): Promise<any> {
   return fetch(`${URL_CATEGORIES}?_embed=videos`)
-    .then(async (respostaDoServidor) => {
-      if (respostaDoServidor.ok) {
-        const resposta = await respostaDoServidor.json();
-        return resposta;
+    .then(async (response) => {
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data);
+
+        return data;
       }
 
       throw new Error('Não foi possível pegar os dados :(');

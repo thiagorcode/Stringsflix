@@ -6,7 +6,7 @@ interface linkYtDTO {
   youtubeID: string;
 }
 
-const YouTubeIframeResponsive: React.FC<linkYtDTO> = ({ youtubeID }: linkYtDTO) => (
+const YouTubeIframeResponsive: React.FC<linkYtDTO> = ({ youtubeID }) => (
   <VideoContainer>
     <ResponsiveIframe
       title="Titulo do Iframe"

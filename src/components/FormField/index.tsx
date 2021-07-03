@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { FormFieldWrapper, Input, Label } from './style';
 
 interface FormFieldDTO {
@@ -27,15 +26,7 @@ const FormField: React.FC<FormFieldDTO> = ({
         htmlFor={fieldId}
       >
         <Input
-          as={tag}
-          id={fieldId}
-          type={type}
-          value={value}
-          name={name}
-          hasValue={hasValue}
           onChange={onChange}
-          autoComplete={hasSuggestions ? 'off' : 'on'}
-          list={hasSuggestions ? `suggestionFor_${fieldId}` : undefined}
         />
         <Label.Text>
           {label}
@@ -58,22 +49,6 @@ const FormField: React.FC<FormFieldDTO> = ({
       </Label>
     </FormFieldWrapper>
   );
-};
-
-FormField.defaultProps = {
-  type: 'text',
-  value: '',
-  onChange: () => { },
-  suggestions: [],
-};
-
-FormField.propTypes = {
-  label: PropTypes.string.isRequired,
-  type: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string,
-  onChange: PropTypes.func,
-  suggestions: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default FormField;

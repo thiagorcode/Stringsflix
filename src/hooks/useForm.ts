@@ -1,9 +1,16 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { useState } from 'react';
 
-function useForm(valoresIniciais) {
-  const [values, setValues] = useState(valoresIniciais);
+interface categoryDto {
+  nome: string;
+  descricao: string;
+  cor: string;
+}
 
-  function setValue(chave, valor) {
+function useForm(valueInit: categoryDto) {
+  const [values, setValues] = useState(valueInit);
+
+  function setValue(chave: any, valor: any) {
     // chave: nome, descricao, bla, bli
     setValues({
       ...values,
@@ -11,7 +18,7 @@ function useForm(valoresIniciais) {
     });
   }
 
-  function handleChange(infosDoEvento) {
+  function handleChange(infosDoEvento: any) {
     setValue(
       infosDoEvento.target.getAttribute('name'),
       infosDoEvento.target.value,
@@ -19,7 +26,7 @@ function useForm(valoresIniciais) {
   }
 
   function clearForm() {
-    setValues(valoresIniciais);
+    setValues(valueInit);
   }
 
   return {

@@ -28,7 +28,6 @@ const Home: React.FC = () => {
   useEffect(() => {
     categoriasRepository.getAllWithVideos()
       .then((categoryWithMovies) => {
-        console.log(categoryWithMovies[0].videos[0]);
         setDataInit(categoryWithMovies);
       })
       .catch((err) => {

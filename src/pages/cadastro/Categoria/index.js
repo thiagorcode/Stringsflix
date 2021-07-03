@@ -8,7 +8,16 @@ import useForm from '../../../hooks/useForm';
 // JSON - Server
 import categoriasRepository from '../../../repositories/categorias';
 
-function CadastroCategoria() {
+interface categoryDTO {
+  titulo: string;
+  cor: string;
+  link_extra: {
+    text?: string;
+  }
+  id?: number;
+}
+
+const CadastroCategoria: React.FC = () => {
   // Fazer manipulação do histórico de navegação
   const history = useHistory();
   const valoresIniciais = {
@@ -28,19 +37,19 @@ function CadastroCategoria() {
     // E a ju ama variáveis
     fetch(URL_TOP)
       .then(async (respostaDoServidor) => {
+        console.log(respostaDoServidor);
         const resposta = await respostaDoServidor.json();
-        setCategorias([
-          ...resposta,
-        ]);
+        // setCategorias();
+        // [...resposta]
       });
   }, []);
 
-  function handleSubmit(infosDoEvento) {
+  function handleSubmit(infosDoEvento: any) {
     const { nome, cor, descricao } = values;
     infosDoEvento.preventDefault();
+
     setCategorias([
       ...categorias,
-      values,
     ]);
     // ! Cria no Server uma nova categória
     categoriasRepository.create({
@@ -55,6 +64,7 @@ function CadastroCategoria() {
       history.push('/');
     })
       .catch(() => {
+        history.push('/');
       });
     clearForm();
   }
@@ -116,6 +126,6 @@ function CadastroCategoria() {
       </Link>
     </PageDefault>
   );
-}
+};
 
 export default CadastroCategoria;

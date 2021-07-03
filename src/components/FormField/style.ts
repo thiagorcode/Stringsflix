@@ -1,5 +1,9 @@
 import styled, { css } from 'styled-components';
 
+interface ContainerInput {
+  hasValue?: boolean;
+}
+
 export const FormFieldWrapper = styled.div`
   position: relative;
   textarea {
@@ -29,7 +33,7 @@ Label.Text = styled.span`
   transition: .1s ease-in-out;
 `;
 
-export const Input = styled.input<{ hasValue: boolean }>`
+export const Input = styled.input`
   background: #53585D;
   color: #F5F5F5;
   display: block;
@@ -55,7 +59,7 @@ export const Input = styled.input<{ hasValue: boolean }>`
   &:focus:not([type="color"]) + span {
     transform: scale(.6) translateY(-10px);
   }
-  ${(props) => props.hasValue && css`
+  ${(props: ContainerInput) => props.hasValue && css`
     &:not([type="color"]) + span {
       transform: scale(.6) translateY(-10px);
     }
